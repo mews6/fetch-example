@@ -7,7 +7,7 @@ function calcularPopularidad(pedidos, productos) {
             let producto = productos.idproducto[obj.idproducto];
             ret.push(
                 {
-                    "nombre": producto.nombreProducto;
+                    "nombre": producto.nombreProducto,
                     "idproducto": obj.idproducto,
                     "cantidad": int(obj.cantidad)
                 }
@@ -16,7 +16,7 @@ function calcularPopularidad(pedidos, productos) {
             ret.idproducto[obj.idproducto] += int(obj.cantidad);
         }
     } return ret;
-    
+
 }
 
 function pedidosNecesarios( ){
